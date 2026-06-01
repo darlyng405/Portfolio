@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darlyng Mateo — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HOTBAR
+══════════════════════════════════════════ -->
+<nav id="hotbar" aria-label="Navegación">
+  <a class="slot active" data-id="hero">
+    <span class="slot-num">01</span>
+    About
+  </a>
+  <a class="slot" data-id="projects">
+    <span class="slot-num">02</span>
+    Proyectos
+  </a>
+  <a class="slot" data-id="hard-skills">
+    <span class="slot-num">03</span>
+    Tecnologías
+  </a>
+  <a class="slot" data-id="process">
+    <span class="slot-num">04</span>
+    Proceso
+  </a>
+  <a class="slot" data-id="logros">
+    <span class="slot-num">05</span>
+    Logros
+  </a>
+  <a class="slot" data-id="contact">
+    <span class="slot-num">06</span>
+    Contacto
+  </a>
+</nav>
+
+<main>
+
+<!-- ══════════════════════════════════════════
+  01 — HERO / ABOUT ME
+══════════════════════════════════════════ -->
+<section id="hero" data-section="hero">
+  <p class="hero-eyebrow">&gt; darlyng.dev — cargando perfil...</p>
+
+  <!-- Profile row: name + photo -->
+  <div class="hero-profile-row">
+    <div class="hero-text-block">
+      <h1 class="hero-title">
+        Darlyng Rafael<br>Mateo Peral<span class="cursor"></span>
+      </h1>
+      <p class="hero-role">
+        Desarrollador Full-Stack en formación &amp; <span>constructor de sistemas reales.</span>
+      </p>
+      <p class="hero-subtitle">Backend Developer · Estudiante de Desarrollo de Aplicaciones Informáticas</p>
+    </div>
+
+    <div class="hero-photo-slot">
+      <div class="photo-frame">
+        <div class="photo-placeholder">
+          <span class="photo-icon">[ foto ]</span>
+          <span class="photo-hint">Reemplaza esta imagen</span>
+        </div>
+        <!-- Para usar tu foto, reemplaza el div de arriba por:
+        <img src="tu-foto.jpg" alt="Darlyng Rafael Mateo Peral" /> -->
+      </div>
+      <div class="photo-label">// DARLYNG.JPG</div>
+    </div>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-card">
+      <div class="about-card-label">// QUIÉN SOY</div>
+      <p>
+        Construyo sistemas reales.<br><br>
+        Actualmente desarrollo y administro un sistema de gestión académica
+        utilizado dentro de mi institución educativa, y he participado en el
+        desarrollo de plataformas capaces de atender cientos de usuarios
+        simultáneamente.<br><br>
+        Me interesan el backend, la arquitectura de software, la programación
+        competitiva y el diseño de productos digitales que combinan funcionalidad
+        con una experiencia de usuario bien pensada.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <div class="about-card-label">// ¿QUÉ ME DIFERENCIA?</div>
+      <p>
+        Mientras muchos estudiantes construyen proyectos de práctica,
+        yo me enfoco en resolver problemas reales.<br><br>
+        He desarrollado aplicaciones utilizadas por usuarios reales, participo
+        en competencias académicas como la Olimpiada Dominicana de Informática
+        y busco constantemente mejorar tanto mis habilidades técnicas como
+        mi capacidad para diseñar soluciones completas.
+      </p>
+    </div>
+
+    <div class="about-card" style="grid-column:1/-1;">
+      <div class="about-card-label">// TIMELINE</div>
+      <div class="timeline-track" style="margin-top:1rem;">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div><div class="tl-year">2024</div><div class="tl-text">Inicio formal en desarrollo de software — Instituto Politécnico Max Henríquez Ureña.</div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div><div class="tl-year">2025</div><div class="tl-text">Construcción y despliegue del SIA en producción dentro de la institución.</div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div><div class="tl-year">2025</div><div class="tl-text">Participación en la Olimpiada Dominicana de Informática (ODI). Reconocimientos en MUN — Mejor Negociación y Delegación Innovadora.</div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div><div class="tl-year">2026</div><div class="tl-text">Desarrollo de Votech — plataforma de votación digital con ~500 usuarios en vivo sin fallos.</div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot unknown">?</div>
+          <div><div class="tl-year" style="color:var(--brown-lt);">?</div><div class="tl-text" style="color:#aaa;">Lo que viene...</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span class="scroll-arrow">▼</span>
+    sigue explorando
+  </div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  02 — PROYECTOS
+══════════════════════════════════════════ -->
+<section class="section" id="projects" data-section="projects">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <span class="section-title">Trabajo Seleccionado</span>
+  </div>
+
+  <!-- SIA -->
+  <div class="project-card reveal">
+    <div class="project-header">
+      <div>
+        <div class="project-name">SIA — Sistema de Información Académica</div>
+        <div class="project-tagline">Plataforma de Gestión Académica Multi-rol</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;flex-shrink:0;">
+        <span class="project-status"><span class="dot"></span> En Producción</span>
+        <button class="expand-btn">[ Expandir ]</button>
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="meta-row">
+        <div class="meta-label">// EL PROBLEMA</div>
+        <p style="font-size:12px;color:var(--muted);margin-top:4px;">
+          La institución necesitaba una plataforma centralizada para gestionar
+          procesos académicos, usuarios y reportes.
+        </p>
+      </div>
+      <div class="meta-row">
+        <div class="meta-label">// MI SOLUCIÓN</div>
+        <p style="font-size:12px;color:var(--muted);margin-top:4px;">
+          Diseñé y desarrollé un sistema multirol para administradores, docentes,
+          estudiantes, coordinación y orientación. Implementé autenticación JWT con
+          middleware propio, bcrypt y rate limiting. Generé reportes PDF dinámicos
+          con PDFKit y cobertura de API con tests automatizados (Jest + Supertest).
+        </p>
+      </div>
+      <div class="meta-row">
+        <div class="meta-label">// STACK</div>
+        <div class="tag-list">
+          <span class="tag">Node.js</span>
+          <span class="tag">Express</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">SQL Server</span>
+          <span class="tag">JWT</span>
+          <span class="tag">Jest</span>
+          <span class="tag">PDFKit</span>
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="meta-label">// RESULTADO</div>
+        <ul>
+          <li>Sistema actualmente en producción y utilizado dentro de la institución.</li>
+          <li>Autenticación robusta con bcrypt y protección contra fuerza bruta.</li>
+          <li>Reportes PDF dinámicos y API completamente testeada.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- VOTECH -->
+  <div class="project-card reveal">
+    <div class="project-header">
+      <div>
+        <div class="project-name">Votech — Plataforma de Votación</div>
+        <div class="project-tagline">Backend de Votación Digital en Tiempo Real</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;flex-shrink:0;">
+        <span class="project-status project-status--done"><span class="dot dot--done"></span> Completado</span>
+        <button class="expand-btn">[ Expandir ]</button>
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="meta-row">
+        <div class="meta-label">// EL PROBLEMA</div>
+        <p style="font-size:12px;color:var(--muted);margin-top:4px;">
+          Se necesitaba una plataforma confiable para gestionar votaciones
+          durante una feria tecnológica con alta concurrencia.
+        </p>
+      </div>
+      <div class="meta-row">
+        <div class="meta-label">// MI SOLUCIÓN</div>
+        <p style="font-size:12px;color:var(--muted);margin-top:4px;">
+          Desarrollé el backend completo en TypeScript con Express y Supabase,
+          implementando autenticación JWT propia desde cero, CORS restrictivo por
+          entornos y una API REST con módulos de proyectos, votos y resultados.
+        </p>
+      </div>
+      <div class="meta-row">
+        <div class="meta-label">// STACK</div>
+        <div class="tag-list">
+          <span class="tag">TypeScript</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">JWT</span>
+          <span class="tag">bcrypt</span>
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="meta-label">// RESULTADO</div>
+        <ul>
+          <li>La plataforma soportó ~500 usuarios durante el evento sin interrupciones ni fallos.</li>
+          <li>API REST escalable con integridad de votos garantizada.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  03 — TECNOLOGÍAS
+══════════════════════════════════════════ -->
+<section class="section" id="hard-skills" data-section="hard-skills">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <span class="section-title">Tecnologías</span>
+  </div>
+
+  <div class="skills-grid">
+
+    <div class="skill-group reveal">
+      <div class="skill-group-label">// FRONTEND</div>
+      <div class="skill-tags">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal">
+      <div class="skill-group-label">// BACKEND</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Express.js</span>
+        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">JWT Auth</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal">
+      <div class="skill-group-label">// BASES DE DATOS</div>
+      <div class="skill-tags">
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">SQL Server</span>
+        <span class="skill-tag">Supabase</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal">
+      <div class="skill-group-label">// HERRAMIENTAS</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">Linux (Fedora)</span>
+        <span class="skill-tag">Render</span>
+        <span class="skill-tag">Jest</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Skill levels — Beginner / Mid / Senior -->
+  <div style="margin-top:2rem;">
+    <div class="about-card reveal">
+      <div class="about-card-label" style="margin-bottom:16px;">// NIVEL DE DOMINIO</div>
+      <div class="skill-level-list">
+
+        <div class="skill-level-item">
+          <div class="skill-level-name">JavaScript / Node.js</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-filled">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Mid</span>
+        </div>
+
+        <div class="skill-level-item">
+          <div class="skill-level-name">TypeScript</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-filled">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Mid</span>
+        </div>
+
+        <div class="skill-level-item">
+          <div class="skill-level-name">PostgreSQL / SQL</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-filled">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Mid</span>
+        </div>
+
+        <div class="skill-level-item">
+          <div class="skill-level-name">Express.js / REST APIs</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-filled">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Mid</span>
+        </div>
+
+        <div class="skill-level-item">
+          <div class="skill-level-name">React</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-empty">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Beginner</span>
+        </div>
+
+        <div class="skill-level-item">
+          <div class="skill-level-name">Linux / Git / Render</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-filled">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Mid</span>
+        </div>
+
+        <div class="skill-level-item">
+          <div class="skill-level-name">C++ / Python</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-empty">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Beginner</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Code snapshot -->
+  <div class="code-block reveal" style="margin-top:1.5rem;">
+    <span class="comment">// stack actual — darlyng.config.js</span><br>
+    <span class="kw">const</span> <span class="var">darlyng</span> = <span class="bracket">{</span><br>
+    &nbsp;&nbsp;<span class="var">frontend</span>: <span class="bracket">[</span><span class="str">"React"</span>, <span class="str">"TypeScript"</span>, <span class="str">"JavaScript"</span>, <span class="str">"HTML5"</span>, <span class="str">"CSS3"</span><span class="bracket">]</span>,<br>
+    &nbsp;&nbsp;<span class="var">backend</span>: <span class="bracket">[</span><span class="str">"Node.js"</span>, <span class="str">"Express.js"</span>, <span class="str">"REST APIs"</span>, <span class="str">"JWT"</span><span class="bracket">]</span>,<br>
+    &nbsp;&nbsp;<span class="var">databases</span>: <span class="bracket">[</span><span class="str">"PostgreSQL"</span>, <span class="str">"SQL Server"</span>, <span class="str">"Supabase"</span><span class="bracket">]</span>,<br>
+    &nbsp;&nbsp;<span class="var">tools</span>: <span class="bracket">[</span><span class="str">"Git"</span>, <span class="str">"Linux"</span>, <span class="str">"Render"</span>, <span class="str">"Jest"</span><span class="bracket">]</span>,<br>
+    &nbsp;&nbsp;<span class="var">intereses</span>: <span class="bracket">[</span><span class="str">"Arquitectura de Software"</span>, <span class="str">"Prog. Competitiva"</span>, <span class="str">"UX"</span><span class="bracket">]</span><br>
+    <span class="bracket">}</span>;
+  </div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  04 — PROCESO
+══════════════════════════════════════════ -->
+<section class="section" id="process" data-section="process">
+  <div class="section-header reveal">
+    <span class="section-num">04</span>
+    <span class="section-title">Mi Proceso</span>
+  </div>
+
+  <div class="soft-grid">
+    <div class="soft-card reveal">
+      <div class="soft-icon">[01]</div>
+      <div class="soft-name">Comprender el Problema</div>
+      <div class="soft-desc">Antes de escribir código, busco entender qué necesidad existe realmente y quién utilizará la solución. Primero entiendo, luego código.</div>
+    </div>
+    <div class="soft-card reveal">
+      <div class="soft-icon">[02]</div>
+      <div class="soft-name">Diseñar una Arquitectura Simple</div>
+      <div class="soft-desc">Prefiero sistemas claros, mantenibles y escalables antes que soluciones excesivamente complejas. Los edge cases me quitan el sueño (literalmente).</div>
+    </div>
+    <div class="soft-card reveal">
+      <div class="soft-icon">[03]</div>
+      <div class="soft-name">Construir e Iterar</div>
+      <div class="soft-desc">Desarrollo funcionalidades, recibo retroalimentación, identifico problemas y realizo mejoras continuas. No copio soluciones sin entenderlas.</div>
+    </div>
+    <div class="soft-card reveal">
+      <div class="soft-icon">[?]</div>
+      <div class="soft-name">Resolución de Problemas</div>
+      <div class="soft-desc">Descompongo problemas complejos en partes manejables. Aprendí a construir sistemas reales antes de terminar el colegio.</div>
+    </div>
+    <div class="soft-card reveal">
+      <div class="soft-icon">[~]</div>
+      <div class="soft-name">Comunicación Técnica</div>
+      <div class="soft-desc">Puedo explicar arquitecturas complejas de forma clara. Los logs son para personas, no para máquinas.</div>
+    </div>
+    <div class="soft-card reveal">
+      <div class="soft-icon">[+]</div>
+      <div class="soft-name">Criterio Técnico</div>
+      <div class="soft-desc">Si no sé por qué funciona, no lo uso en producción. Me adapto al problema, no al revés.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  05 — LOGROS
+══════════════════════════════════════════ -->
+<section class="section" id="logros" data-section="logros">
+  <div class="section-header reveal">
+    <span class="section-num">05</span>
+    <span class="section-title">Resultados</span>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card reveal">
+      <div class="stat-marker"></div>
+      <div>
+        <div class="stat-number">~500</div>
+        <div class="stat-desc">usuarios en Votech sin interrupciones durante el evento</div>
+      </div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-marker"></div>
+      <div>
+        <div class="stat-number">2</div>
+        <div class="stat-desc">sistemas en producción real administrados activamente</div>
+      </div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-marker"></div>
+      <div>
+        <div class="stat-number">ODI</div>
+        <div class="stat-desc">Participante de la Olimpiada Dominicana de Informática 2025</div>
+      </div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-marker"></div>
+      <div>
+        <div class="stat-number">MUN</div>
+        <div class="stat-desc">Reconocimientos: Mejor Negociación y Delegación Innovadora</div>
+      </div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-marker"></div>
+      <div>
+        <div class="stat-number">∞</div>
+        <div class="stat-desc">café consumido. Poco sueño. Muchos commits.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Educación -->
+  <div class="about-card reveal" style="margin-top:2rem;">
+    <div class="about-card-label">// EDUCACIÓN</div>
+    <div class="edu-row">
+      <div class="edu-name">Instituto Politécnico Max Henríquez Ureña</div>
+      <div class="edu-degree">Diseño y Desarrollo de Aplicaciones Informáticas</div>
+      <div class="edu-period">2024 – 2028 · En curso</div>
+    </div>
+  </div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  06 — CONTACTO
+══════════════════════════════════════════ -->
+<section class="section" id="contact" data-section="contact">
+  <div class="section-header reveal">
+    <span class="section-num">06</span>
+    <span class="section-title">Contacto</span>
+  </div>
+
+  <p class="contact-intro reveal">
+    ¿Tienes una idea, proyecto u oportunidad?<br>
+    <span>Hablemos.</span>
+  </p>
+
+  <div class="contact-links">
+    <a class="contact-link reveal" href="https://github.com/darlyng405" target="_blank" rel="noopener">
+      <span class="cl-key">GitHub</span>
+      <span class="cl-val">github.com/darlyng405</span>
+    </a>
+
+    <div class="contact-link reveal" id="copy-email" style="cursor:pointer;">
+      <span class="cl-key">Email</span>
+      <span class="cl-val">
+        <span id="email-addr">mateodarlyng5@gmail.com</span>
+        &nbsp;
+        <span class="copy-feedback" id="copy-fb">✔ copiado</span>
+      </span>
+    </div>
+
+    <div class="contact-link reveal">
+      <span class="cl-key">Ubicación</span>
+      <span class="cl-val">Santo Domingo, República Dominicana</span>
+    </div>
+
+    <div class="contact-link reveal" style="opacity:0.4;cursor:not-allowed;">
+      <span class="cl-key">LinkedIn</span>
+      <span class="cl-val">próximamente...</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  darlyng rafael mateo peral · construido con criterio · 2026
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
