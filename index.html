@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darlyng — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HOTBAR
+══════════════════════════════════════════ -->
+<nav id="hotbar" aria-label="Navegación">
+  <a class="slot active" data-id="hero">
+    <span class="slot-num">01</span>
+    About
+  </a>
+  <a class="slot" data-id="hard-skills">
+    <span class="slot-num">02</span>
+    Hard Skills
+  </a>
+  <a class="slot" data-id="projects">
+    <span class="slot-num">03</span>
+    Proyectos
+  </a>
+  <a class="slot" data-id="soft-skills">
+    <span class="slot-num">04</span>
+    Soft Skills
+  </a>
+  <a class="slot" data-id="logros">
+    <span class="slot-num">05</span>
+    Logros
+  </a>
+  <a class="slot" data-id="contact">
+    <span class="slot-num">06</span>
+    Contacto
+  </a>
+</nav>
+
+<main>
+
+<!-- ══════════════════════════════════════════
+  01 — HERO / ABOUT ME
+══════════════════════════════════════════ -->
+<section id="hero" data-section="hero">
+  <p class="hero-eyebrow">&gt; darlyng.dev — cargando perfil...</p>
+
+  <h1 class="hero-title">
+    Hola, soy Darlyng.<span class="cursor"></span>
+  </h1>
+
+  <p class="hero-role">
+    Desarrollador backend &amp; <span>constructor de sistemas reales.</span>
+  </p>
+
+  <div class="about-grid">
+    <div class="about-card">
+      <div class="about-card-label">// QUIÉN SOY</div>
+      <p>
+        Estudio Desarrollo de Aplicaciones Informáticas.
+        Me interesa especialmente el backend, la arquitectura
+        de software y la programación competitiva.<br><br>
+        Diseño sistemas que funcionan en producción,
+        no solo en localhost.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <div class="about-card-label">// DATOS RÁPIDOS</div>
+      <ul class="fact-list">
+        <li>15 años — desde que empecé a curiosear</li>
+        <li>2 sistemas — en producción real</li>
+        <li>500+ usuarios — simultáneos sin caída</li>
+        <li>1 ODI — Olimpiada Dominicana de Informática</li>
+        <li>Mucho café — poco sueño, muchos commits</li>
+      </ul>
+    </div>
+
+    <div class="about-card" style="grid-column:1/-1;">
+      <div class="about-card-label">// TIMELINE</div>
+      <div class="timeline-track" style="margin-top:1rem;">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div><div class="tl-year">2024</div><div class="tl-text">Inicio formal en desarrollo de software.</div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div><div class="tl-year">2025</div><div class="tl-text">Participación en la Olimpiada Dominicana de Informática (ODI).</div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div><div class="tl-year">2025</div><div class="tl-text">Construcción y despliegue de SIA en producción.</div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div><div class="tl-year">2026</div><div class="tl-text">Desarrollo de Votech — plataforma de votación digital.</div></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot unknown">?</div>
+          <div><div class="tl-year" style="color:var(--brown-lt);">?</div><div class="tl-text" style="color:#aaa;">Lo que viene...</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span class="scroll-arrow">▼</span>
+    sigue explorando
+  </div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  02 — HARD SKILLS
+══════════════════════════════════════════ -->
+<section class="section" id="hard-skills" data-section="hard-skills">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <span class="section-title">Hard Skills</span>
+  </div>
+
+  <div class="skills-grid">
+
+    <div class="skill-group reveal">
+      <div class="skill-group-label">// LENGUAJES</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">HTML/CSS</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal">
+      <div class="skill-group-label">// FRAMEWORKS</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Flask</span>
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">React</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal">
+      <div class="skill-group-label">// HERRAMIENTAS</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Nginx</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal">
+      <div class="skill-group-label">// BASES DE DATOS</div>
+      <div class="skill-tags">
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">SQLite</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Skill bars -->
+  <div style="margin-top:2rem;">
+    <div class="about-card reveal">
+      <div class="about-card-label" style="margin-bottom:16px;">// NIVEL DE DOMINIO</div>
+      <div class="skill-bar-list">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label">Python <span>90%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-pct="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label">SQL / PostgreSQL <span>80%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-pct="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label">Flask / FastAPI <span>78%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-pct="78"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label">JavaScript / React <span>65%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-pct="65"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label">Linux / Docker / Nginx <span>72%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-pct="72"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label">C++ <span>55%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-pct="55"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Code snapshot -->
+  <div class="code-block reveal" style="margin-top:1.5rem;">
+    <span class="comment">// stack actual</span><br>
+    <span class="kw">const</span> <span class="var">darlyng</span> = <span class="bracket">{</span><br>
+    &nbsp;&nbsp;<span class="var">lenguajes</span>: <span class="bracket">[</span><span class="str">"Python"</span>, <span class="str">"JavaScript"</span>, <span class="str">"SQL"</span>, <span class="str">"C++"</span><span class="bracket">]</span>,<br>
+    &nbsp;&nbsp;<span class="var">frameworks</span>: <span class="bracket">[</span><span class="str">"Flask"</span>, <span class="str">"FastAPI"</span>, <span class="str">"React"</span><span class="bracket">]</span>,<br>
+    &nbsp;&nbsp;<span class="var">infra</span>: <span class="bracket">[</span><span class="str">"Linux"</span>, <span class="str">"Docker"</span>, <span class="str">"Nginx"</span>, <span class="str">"Git"</span><span class="bracket">]</span>,<br>
+    &nbsp;&nbsp;<span class="var">intereses</span>: <span class="bracket">[</span><span class="str">"Arquitectura"</span>, <span class="str">"Prog. Competitiva"</span><span class="bracket">]</span><br>
+    <span class="bracket">}</span>;
+  </div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  03 — PROYECTOS
+══════════════════════════════════════════ -->
+<section class="section" id="projects" data-section="projects">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <span class="section-title">Proyectos</span>
+  </div>
+
+  <!-- SIA -->
+  <div class="project-card reveal">
+    <div class="project-header">
+      <div>
+        <div class="project-name">SIA</div>
+        <div class="project-tagline">Sistema Académico Integral</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;flex-shrink:0;">
+        <span class="project-status"><span class="dot"></span> Producción Activa</span>
+        <button class="expand-btn">[ Expandir ]</button>
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="meta-row">
+        <div class="meta-label">// STACK</div>
+        <div class="tag-list">
+          <span class="tag">Python</span><span class="tag">Flask</span>
+          <span class="tag">PostgreSQL</span><span class="tag">Nginx</span>
+        </div>
+      </div>
+      <div class="meta-row">
+        <div class="meta-label">// ARQUITECTURA</div>
+        <div style="font-size:12px;color:var(--muted);">Monolito modular — API REST interna</div>
+      </div>
+      <div class="info-block">
+        <div class="meta-label">// RETOS TÉCNICOS</div>
+        <ul>
+          <li>500+ usuarios simultáneos con bloqueos optimistas.</li>
+          <li>Migración de datos desde sistema legacy sin downtime.</li>
+          <li>Permisos granulares para múltiples roles académicos.</li>
+        </ul>
+      </div>
+      <div class="info-block">
+        <div class="meta-label">// APRENDIZAJES</div>
+        <ul>
+          <li>Diseñar pensando en operaciones, no solo en funcionalidades.</li>
+          <li>La importancia de los logs cuando algo explota en producción.</li>
+          <li>Cómo escalar sin reescribir desde cero.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- VOTECH -->
+  <div class="project-card reveal">
+    <div class="project-header">
+      <div>
+        <div class="project-name">Votech</div>
+        <div class="project-tagline">Plataforma de Votación Digital</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;flex-shrink:0;">
+        <span class="project-status"><span class="dot"></span> En Desarrollo</span>
+        <button class="expand-btn">[ Expandir ]</button>
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="meta-row">
+        <div class="meta-label">// STACK</div>
+        <div class="tag-list">
+          <span class="tag">Python</span><span class="tag">FastAPI</span>
+          <span class="tag">React</span><span class="tag">PostgreSQL</span>
+        </div>
+      </div>
+      <div class="meta-row">
+        <div class="meta-label">// ARQUITECTURA</div>
+        <div style="font-size:12px;color:var(--muted);">API REST desacoplada — Frontend SPA</div>
+      </div>
+      <div class="info-block">
+        <div class="meta-label">// RETOS TÉCNICOS</div>
+        <ul>
+          <li>Garantizar integridad del voto sin duplicados ni manipulación.</li>
+          <li>Autenticación robusta y manejo de sesiones en tiempo real.</li>
+          <li>Resultados en tiempo real con actualización eficiente.</li>
+        </ul>
+      </div>
+      <div class="info-block">
+        <div class="meta-label">// APRENDIZAJES</div>
+        <ul>
+          <li>Arquitectura cliente-servidor con separación de responsabilidades.</li>
+          <li>Cómo modelar procesos cívicos reales en software.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  04 — SOFT SKILLS
+══════════════════════════════════════════ -->
+<section class="section" id="soft-skills" data-section="soft-skills">
+  <div class="section-header reveal">
+    <span class="section-num">04</span>
+    <span class="section-title">Soft Skills</span>
+  </div>
+
+  <div class="soft-grid">
+    <div class="soft-card reveal">
+      <div class="soft-icon">[?]</div>
+      <div class="soft-name">Resolución de Problemas</div>
+      <div class="soft-desc">Descompongo problemas complejos en partes manejables. Primero entiendo, luego código.</div>
+    </div>
+    <div class="soft-card reveal">
+      <div class="soft-icon">[!]</div>
+      <div class="soft-name">Autodidacta</div>
+      <div class="soft-desc">Aprendí a construir sistemas reales antes de terminar el colegio. Busco, rompo, aprendo, repito.</div>
+    </div>
+    <div class="soft-card reveal">
+      <div class="soft-icon">[#]</div>
+      <div class="soft-name">Atención al Detalle</div>
+      <div class="soft-desc">Me importa que funcione bien, no solo que funcione. Los edge cases me quitan el sueño (literalmente).</div>
+    </div>
+    <div class="soft-card reveal">
+      <div class="soft-icon">[>]</div>
+      <div class="soft-name">Criterio Técnico</div>
+      <div class="soft-desc">No copio soluciones sin entenderlas. Si no sé por qué funciona, no lo uso en producción.</div>
+    </div>
+    <div class="soft-card reveal">
+      <div class="soft-icon">[+]</div>
+      <div class="soft-name">Adaptabilidad</div>
+      <div class="soft-desc">Dos proyectos con stacks distintos en producción. Me adapto al problema, no al revés.</div>
+    </div>
+    <div class="soft-card reveal">
+      <div class="soft-icon">[~]</div>
+      <div class="soft-name">Comunicación Técnica</div>
+      <div class="soft-desc">Puedo explicar arquitecturas complejas de forma clara. Los logs son para personas, no para máquinas.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  05 — LOGROS
+══════════════════════════════════════════ -->
+<section class="section" id="logros" data-section="logros">
+  <div class="section-header reveal">
+    <span class="section-num">05</span>
+    <span class="section-title">Logros</span>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card reveal">
+      <div class="stat-marker"></div>
+      <div>
+        <div class="stat-number">500+</div>
+        <div class="stat-desc">usuarios simultáneos en SIA sin caída</div>
+      </div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-marker"></div>
+      <div>
+        <div class="stat-number">2</div>
+        <div class="stat-desc">sistemas en producción real</div>
+      </div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-marker"></div>
+      <div>
+        <div class="stat-number">1</div>
+        <div class="stat-desc">participación en la ODI</div>
+      </div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-marker"></div>
+      <div>
+        <div class="stat-number">0</div>
+        <div class="stat-desc">downtime en migración de datos legacy</div>
+      </div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-marker"></div>
+      <div>
+        <div class="stat-number">∞</div>
+        <div class="stat-desc">café consumido. Poco sueño. Muchos commits.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  06 — CONTACTO
+══════════════════════════════════════════ -->
+<section class="section" id="contact" data-section="contact">
+  <div class="section-header reveal">
+    <span class="section-num">06</span>
+    <span class="section-title">Contacto</span>
+  </div>
+
+  <p class="contact-intro reveal">
+    ¿Tienes una idea?<br>
+    <span>Hablemos.</span>
+  </p>
+
+  <div class="contact-links">
+    <a class="contact-link reveal" href="https://github.com/TU_USUARIO" target="_blank" rel="noopener">
+      <span class="cl-key">GitHub</span>
+      <span class="cl-val">/TU_USUARIO</span>
+    </a>
+
+    <div class="contact-link reveal" id="copy-email" style="cursor:pointer;">
+      <span class="cl-key">Correo</span>
+      <span class="cl-val">
+        <span id="email-addr">tucorreo@ejemplo.com</span>
+        &nbsp;
+        <span class="copy-feedback" id="copy-fb">✔ copiado</span>
+      </span>
+    </div>
+
+    <div class="contact-link reveal" style="opacity:0.4;cursor:not-allowed;">
+      <span class="cl-key">LinkedIn</span>
+      <span class="cl-val">próximamente...</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  darlyng · construido con criterio · 2026
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
