@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darlyng Mateo — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- HOTBAR con botón de idioma -->
+<nav id="hotbar" aria-label="Navegación">
+  <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a class="slot active" data-id="hero"><span class="slot-num">01</span> <span data-i18n="nav-about">About</span></a>
+    <a class="slot" data-id="projects"><span class="slot-num">02</span> <span data-i18n="nav-projects">Proyectos</span></a>
+    <a class="slot" data-id="hard-skills"><span class="slot-num">03</span> <span data-i18n="nav-tech">Tecnologías</span></a>
+    <a class="slot" data-id="process"><span class="slot-num">04</span> <span data-i18n="nav-process">Proceso</span></a>
+    <a class="slot" data-id="logros"><span class="slot-num">05</span> <span data-i18n="nav-achievements">Logros</span></a>
+    <a class="slot" data-id="contact"><span class="slot-num">06</span> <span data-i18n="nav-contact">Contacto</span></a>
+  </div>
+  <button id="langToggle" class="lang-btn">🇬🇧 EN</button>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main>
+
+<!-- ══════════════════════════════════════════
+  01 — HERO / ABOUT ME
+══════════════════════════════════════════ -->
+<section id="hero" data-section="hero">
+  <p class="hero-eyebrow" data-i18n="hero-eyebrow">&gt; darlyng.dev — cargando perfil...</p>
+  <div class="hero-profile-row">
+    <div class="hero-text-block">
+      <h1 class="hero-title">Darlyng Rafael<br>Mateo Peral<span class="cursor"></span></h1>
+      <p class="hero-role" data-i18n="hero-role">Desarrollador Full-Stack en formación &amp; <span>constructor de sistemas reales.</span></p>
+      <p class="hero-subtitle" data-i18n="hero-subtitle">Backend Developer · Estudiante de Desarrollo de Aplicaciones Informáticas</p>
+    </div>
+    <div class="hero-photo-slot">
+      <div class="photo-frame"><img src="multimedia/foto.webp" alt="Darlyng Rafael Mateo Peral"></div>
+    </div>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-card">
+      <div class="about-card-label" data-i18n="who-label">// QUIÉN SOY</div>
+      <p data-i18n="who-text">Construyo sistemas reales.<br><br>Actualmente desarrollo y administro un sistema de gestión académica utilizado dentro de mi institución educativa, y he participado en el desarrollo de plataformas capaces de atender cientos de usuarios simultáneamente.<br><br>Me interesan el backend, la arquitectura de software, la programación competitiva y el diseño de productos digitales que combinan funcionalidad con una experiencia de usuario bien pensada.</p>
+    </div>
+    <div class="about-card">
+      <div class="about-card-label" data-i18n="diff-label">// ¿QUÉ ME DIFERENCIA?</div>
+      <p data-i18n="diff-text">Mientras muchos estudiantes construyen proyectos de práctica, yo me enfoco en resolver problemas reales.<br><br>He desarrollado aplicaciones utilizadas por usuarios reales, participo en competencias académicas como la Olimpiada Dominicana de Informática y busco constantemente mejorar tanto mis habilidades técnicas como mi capacidad para diseñar soluciones completas.</p>
+    </div>
+    <div class="about-card" style="grid-column:1/-1;">
+      <div class="about-card-label" data-i18n="timeline-label">// TIMELINE</div>
+      <div class="timeline-track" style="margin-top:1rem;">
+        <div class="tl-item"><div class="tl-dot"></div><div><div class="tl-year">2024</div><div class="tl-text" data-i18n="timeline-1">Inicio formal en desarrollo de software — Instituto Politécnico Max Henríquez Ureña.</div></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div><div class="tl-year">2025</div><div class="tl-text" data-i18n="timeline-2">Construcción y despliegue del SIA en producción dentro de la institución.</div></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div><div class="tl-year">2025</div><div class="tl-text" data-i18n="timeline-3">Participación en la Olimpiada Dominicana de Informática (ODI). Reconocimientos en MUN — Mejor Negociación y Delegación Innovadora.</div></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div><div class="tl-year">2026</div><div class="tl-text" data-i18n="timeline-4">Desarrollo de Votech — plataforma de votación digital con ~500 usuarios en vivo sin fallos.</div></div></div>
+        <div class="tl-item"><div class="tl-dot unknown">?</div><div><div class="tl-year" style="color:var(--brown-lt);">?</div><div class="tl-text" style="color:#7A6E5F;" data-i18n="timeline-5">Lo que viene...</div></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span class="scroll-arrow">▼</span> <span data-i18n="scroll-hint">sigue explorando</span></div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  02 — PROYECTOS
+══════════════════════════════════════════ -->
+<section class="section" id="projects" data-section="projects">
+  <div class="section-header reveal"><span class="section-num">02</span><span class="section-title" data-i18n="projects-title">Trabajo Seleccionado</span></div>
+
+  <!-- SIA -->
+  <div class="project-card reveal">
+    <div class="project-header">
+      <div><div class="project-name">SIA — Sistema de Información Académica</div><div class="project-tagline" data-i18n="sia-tagline">Plataforma de Gestión Académica Multi-rol</div></div>
+      <div class="project-actions"><span class="project-status"><span class="dot"></span> <span data-i18n="sia-status">En Producción</span></span>
+        <a href="https://github.com/darlyng405/Pagina-IPMHU-" target="_blank" class="github-btn"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="white" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.26.82-.58 0-.287-.01-1.05-.015-2.06-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.123-.3-.535-1.52.117-3.16 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.64.24 2.86.118 3.16.768.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.62-5.476 5.92.43.37.824 1.102.824 2.22 0 1.602-.015 2.894-.015 3.287 0 .322.216.698.83.578C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+        <button class="expand-btn">[ Expandir ]</button>
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="meta-row"><div class="meta-label" data-i18n="problem-label">// EL PROBLEMA</div><p data-i18n="sia-problem" style="font-size:12px;margin-top:4px;">La institución necesitaba una plataforma centralizada para gestionar procesos académicos, usuarios y reportes.</p></div>
+      <div class="meta-row"><div class="meta-label" data-i18n="solution-label">// MI SOLUCIÓN</div><p data-i18n="sia-solution" style="font-size:12px;margin-top:4px;">Diseñé y desarrollé un sistema multirol para administradores, docentes, estudiantes, coordinación y orientación. Implementé autenticación JWT con middleware propio, bcrypt y rate limiting. Generé reportes PDF dinámicos con PDFKit y cobertura de API con tests automatizados (Jest + Supertest).</p></div>
+      <div class="meta-row"><div class="meta-label" data-i18n="stack-label">// STACK</div><div class="tag-list"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">PostgreSQL</span><span class="tag">SQL Server</span><span class="tag">JWT</span><span class="tag">Jest</span><span class="tag">PDFKit</span></div></div>
+      <div class="info-block"><div class="meta-label" data-i18n="result-label">// RESULTADO</div><ul><li data-i18n="sia-result1">Sistema actualmente en producción y utilizado dentro de la institución.</li><li data-i18n="sia-result2">Autenticación robusta con bcrypt y protección contra fuerza bruta.</li><li data-i18n="sia-result3">Reportes PDF dinámicos y API completamente testeada.</li></ul></div>
+    </div>
+  </div>
+
+  <!-- VOTECH -->
+  <div class="project-card reveal">
+    <div class="project-header">
+      <div><div class="project-name">Votech — Plataforma de Votación</div><div class="project-tagline" data-i18n="votech-tagline">Backend de Votación Digital en Tiempo Real</div></div>
+      <div class="project-actions"><span class="project-status project-status--done"><span class="dot dot--done"></span> <span data-i18n="votech-status">Completado</span></span>
+        <a href="https://github.com/darlyng405/Votatech-Frontend" target="_blank" class="github-btn"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="white" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.26.82-.58 0-.287-.01-1.05-.015-2.06-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.123-.3-.535-1.52.117-3.16 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.64.24 2.86.118 3.16.768.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.62-5.476 5.92.43.37.824 1.102.824 2.22 0 1.602-.015 2.894-.015 3.287 0 .322.216.698.83.578C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+        <button class="expand-btn">[ Expandir ]</button>
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="meta-row"><div class="meta-label" data-i18n="problem-label">// EL PROBLEMA</div><p data-i18n="votech-problem" style="font-size:12px;margin-top:4px;">Se necesitaba una plataforma confiable para gestionar votaciones durante una feria tecnológica con alta concurrencia.</p></div>
+      <div class="meta-row"><div class="meta-label" data-i18n="solution-label">// MI SOLUCIÓN</div><p data-i18n="votech-solution" style="font-size:12px;margin-top:4px;">Desarrollé el backend completo en TypeScript con Express y Supabase, implementando autenticación JWT propia desde cero, CORS restrictivo por entornos y una API REST con módulos de proyectos, votos y resultados.</p></div>
+      <div class="meta-row"><div class="meta-label" data-i18n="stack-label">// STACK</div><div class="tag-list"><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Supabase</span><span class="tag">JWT</span><span class="tag">bcrypt</span></div></div>
+      <div class="info-block"><div class="meta-label" data-i18n="result-label">// RESULTADO</div><ul><li data-i18n="votech-result1">La plataforma soportó ~500 usuarios durante el evento sin interrupciones ni fallos.</li><li data-i18n="votech-result2">API REST escalable con integridad de votos garantizada.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  03 — TECNOLOGÍAS (con nivel de dominio y texto a la derecha)
+══════════════════════════════════════════ -->
+<section class="section" id="hard-skills" data-section="hard-skills">
+  <div class="section-header reveal"><span class="section-num">03</span><span class="section-title" data-i18n="tech-title">Tecnologías</span></div>
+
+  <div class="skills-grid">
+    <div class="skill-group reveal"><div class="skill-group-label">// FRONTEND</div><div class="skill-tags"><span class="skill-tag">React</span><span class="skill-tag">TypeScript</span><span class="skill-tag">JavaScript</span><span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span></div></div>
+    <div class="skill-group reveal"><div class="skill-group-label">// BACKEND</div><div class="skill-tags"><span class="skill-tag">Node.js</span><span class="skill-tag">Express.js</span><span class="skill-tag">REST APIs</span><span class="skill-tag">JWT Auth</span></div></div>
+    <div class="skill-group reveal"><div class="skill-group-label">// BASES DE DATOS</div><div class="skill-tags"><span class="skill-tag">PostgreSQL</span><span class="skill-tag">SQL Server</span><span class="skill-tag">Supabase</span></div></div>
+    <div class="skill-group reveal"><div class="skill-group-label">// HERRAMIENTAS</div><div class="skill-tags"><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">Linux (Fedora)</span><span class="skill-tag">Render</span><span class="skill-tag">Jest</span></div></div>
+  </div>
+
+  <div style="margin-top:2rem;">
+    <div class="about-card reveal">
+      <div class="about-card-label" style="margin-bottom:16px;" data-i18n="skill-level-label">// NIVEL DE DOMINIO</div>
+      <div class="skill-level-list">
+        <div class="skill-level-item">
+          <div class="skill-level-name">JavaScript / Node.js</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-filled">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Mid</span>
+        </div>
+        <div class="skill-level-item">
+          <div class="skill-level-name">TypeScript</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-filled">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Mid</span>
+        </div>
+        <div class="skill-level-item">
+          <div class="skill-level-name">PostgreSQL / SQL</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-filled">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Mid</span>
+        </div>
+        <div class="skill-level-item">
+          <div class="skill-level-name">Express.js / REST APIs</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-filled">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Mid</span>
+        </div>
+        <div class="skill-level-item">
+          <div class="skill-level-name">React</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-empty">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Beginner</span>
+        </div>
+        <div class="skill-level-item">
+          <div class="skill-level-name">Linux / Git / Render</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-filled">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Mid</span>
+        </div>
+        <div class="skill-level-item">
+          <div class="skill-level-name">C++ / Python</div>
+          <div class="skill-level-badges">
+            <span class="lvl-badge lvl-filled">Beginner</span>
+            <span class="lvl-badge lvl-empty">Mid</span>
+            <span class="lvl-badge lvl-empty">Senior</span>
+          </div>
+          <span class="lvl-current">Beginner</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stack actual real -->
+  <div class="tech-showcase reveal">
+    <div class="tech-category"><div class="tech-category-title">// FRONTEND</div><div class="tech-items"><span class="tech-item"><strong>React</strong></span><span class="tech-item"><strong>TypeScript</strong></span><span class="tech-item">JavaScript</span><span class="tech-item">HTML5/CSS3</span></div></div>
+    <div class="tech-category"><div class="tech-category-title">// BACKEND</div><div class="tech-items"><span class="tech-item"><strong>Node.js</strong></span><span class="tech-item"><strong>Express.js</strong></span><span class="tech-item">REST APIs</span><span class="tech-item">JWT · bcrypt</span></div></div>
+    <div class="tech-category"><div class="tech-category-title">// BASES DE DATOS</div><div class="tech-items"><span class="tech-item">PostgreSQL</span><span class="tech-item">SQL Server</span><span class="tech-item">Supabase</span></div></div>
+    <div class="tech-category"><div class="tech-category-title">// TOOLS & DEV</div><div class="tech-items"><span class="tech-item">Git/GitHub</span><span class="tech-item">Linux (Fedora)</span><span class="tech-item">Render</span><span class="tech-item">Jest</span></div></div>
+    <div class="tech-category"><div class="tech-category-title">// INTERESES</div><div class="tech-items"><span class="tech-item">Arquitectura de Software</span><span class="tech-item">Prog. Competitiva</span><span class="tech-item">UX</span></div></div>
+  </div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  04 — PROCESO
+══════════════════════════════════════════ -->
+<section class="section" id="process" data-section="process">
+  <div class="section-header reveal"><span class="section-num">04</span><span class="section-title" data-i18n="process-title">Mi Proceso</span></div>
+  <div class="soft-grid">
+    <div class="soft-card reveal"><div class="soft-icon">[01]</div><div class="soft-name" data-i18n="proc1-name">Comprender el Problema</div><div class="soft-desc" data-i18n="proc1-desc">Antes de escribir código, busco entender qué necesidad existe realmente y quién utilizará la solución. Primero entiendo, luego código.</div></div>
+    <div class="soft-card reveal"><div class="soft-icon">[02]</div><div class="soft-name" data-i18n="proc2-name">Diseñar una Arquitectura Simple</div><div class="soft-desc" data-i18n="proc2-desc">Prefiero sistemas claros, mantenibles y escalables antes que soluciones excesivamente complejas. Los edge cases me quitan el sueño (literalmente).</div></div>
+    <div class="soft-card reveal"><div class="soft-icon">[03]</div><div class="soft-name" data-i18n="proc3-name">Construir e Iterar</div><div class="soft-desc" data-i18n="proc3-desc">Desarrollo funcionalidades, recibo retroalimentación, identifico problemas y realizo mejoras continuas. No copio soluciones sin entenderlas.</div></div>
+    <div class="soft-card reveal"><div class="soft-icon">[?]</div><div class="soft-name" data-i18n="proc4-name">Resolución de Problemas</div><div class="soft-desc" data-i18n="proc4-desc">Descompongo problemas complejos en partes manejables. Aprendí a construir sistemas reales antes de terminar el colegio.</div></div>
+    <div class="soft-card reveal"><div class="soft-icon">[~]</div><div class="soft-name" data-i18n="proc5-name">Comunicación Técnica</div><div class="soft-desc" data-i18n="proc5-desc">Puedo explicar arquitecturas complejas de forma clara. Los logs son para personas, no para máquinas.</div></div>
+    <div class="soft-card reveal"><div class="soft-icon">[+]</div><div class="soft-name" data-i18n="proc6-name">Criterio Técnico</div><div class="soft-desc" data-i18n="proc6-desc">Si no sé por qué funciona, no lo uso en producción. Me adapto al problema, no al revés.</div></div>
+  </div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  05 — LOGROS
+══════════════════════════════════════════ -->
+<section class="section" id="logros" data-section="logros">
+  <div class="section-header reveal"><span class="section-num">05</span><span class="section-title" data-i18n="achievements-title">Resultados</span></div>
+  <div class="stats-grid">
+    <div class="stat-card reveal"><div class="stat-marker"></div><div><div class="stat-number">~500</div><div class="stat-desc" data-i18n="stat1">usuarios en Votech sin interrupciones durante el evento</div></div></div>
+    <div class="stat-card reveal"><div class="stat-marker"></div><div><div class="stat-number">2</div><div class="stat-desc" data-i18n="stat2">sistemas en producción real administrados activamente</div></div></div>
+    <div class="stat-card reveal"><div class="stat-marker"></div><div><div class="stat-number">ODI</div><div class="stat-desc" data-i18n="stat3">Participante de la Olimpiada Dominicana de Informática 2025</div></div></div>
+    <div class="stat-card reveal"><div class="stat-marker"></div><div><div class="stat-number">MUN</div><div class="stat-desc" data-i18n="stat4">Reconocimientos: Mejor Negociación y Delegación Innovadora</div></div></div>
+    <div class="stat-card reveal"><div class="stat-marker"></div><div><div class="stat-number">∞</div><div class="stat-desc" data-i18n="stat5">café consumido. Poco sueño. Muchos commits.</div></div></div>
+  </div>
+  <div class="about-card reveal" style="margin-top:2rem;"><div class="about-card-label" data-i18n="education-label">// EDUCACIÓN</div><div class="edu-row"><div class="edu-name">Instituto Politécnico Max Henríquez Ureña</div><div class="edu-degree" data-i18n="edu-degree">Diseño y Desarrollo de Aplicaciones Informáticas</div><div class="edu-period">2024 – 2028 · <span data-i18n="edu-period">En curso</span></div></div></div>
+</section>
+
+<hr class="block-divider">
+
+<!-- ══════════════════════════════════════════
+  06 — CONTACTO (con banderas y CVs lado a lado)
+══════════════════════════════════════════ -->
+<section class="section" id="contact" data-section="contact">
+  <div class="section-header reveal"><span class="section-num">06</span><span class="section-title" data-i18n="contact-title">Contacto</span></div>
+  <p class="contact-intro reveal" data-i18n="contact-intro">¿Tienes una idea, proyecto u oportunidad?<br><span>Hablemos.</span></p>
+  <div class="contact-links">
+    <a class="contact-link reveal" href="https://github.com/darlyng405" target="_blank"><span class="cl-key">GitHub</span><span class="cl-val">github.com/darlyng405</span></a>
+    <div class="contact-link reveal" id="copy-email" style="cursor:pointer;"><span class="cl-key">Email</span><span class="cl-val"><span id="email-addr">mateodarlyng5@gmail.com</span> <span class="copy-feedback" id="copy-fb">✔ copiado</span></span></div>
+    <a class="contact-link reveal" href="https://www.linkedin.com/in/darlyng-mateo-7031793a6" target="_blank"><span class="cl-key">LinkedIn</span><span class="cl-val">linkedin.com/in/darlyng-mateo-7031793a6</span></a>
+    <div class="contact-link reveal"><span class="cl-key" data-i18n="location-label">Ubicación</span><span class="cl-val">Santo Domingo, República Dominicana</span></div>
+    <div class="cv-buttons">
+      <a class="contact-link cv-item reveal" href="multimedia/CV — Darlyng Rafael Mateo Peral.pdf" download>
+        <span class="cl-key"><span class="flag-icon">🇪🇸</span> CV</span>
+        <span class="cl-val" data-i18n="cv-download-es">Descargar CV (Español)</span>
+      </a>
+      <a class="contact-link cv-item reveal" href="multimedia/CV English — Darlyng Rafael Mateo Peral.pdf" download>
+        <span class="cl-key"><span class="flag-icon">🇬🇧</span> CV</span>
+        <span class="cl-val" data-i18n="cv-download-en">Download CV (English)</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer data-i18n="footer">Darlyng Rafael Mateo Peral · 2026</footer>
+
+<script src="translations.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
