@@ -206,3 +206,43 @@ footer { text-align: center; padding: 2rem; font-family: 'Press Start 2P', monos
   .slot-num { display: none; }
   .project-actions { flex-wrap: wrap; }
 }
+
+/* ===== BOTÓN DE IDIOMA Y MEJORAS MÓVIL ===== */
+.nav-links {
+  display: flex;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  padding: 14px 20px;
+  color: #7A6E5F;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: 0.1s;
+  white-space: nowrap;
+}
+
+.lang-btn:hover {
+  background: var(--green-bg);
+  color: var(--green);
+  border-bottom: 3px solid var(--gold);
+}
+
+#hotbar {
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+/* Ajustes responsivos ya existentes, pero aseguramos el botón */
+@media (max-width: 640px) {
+  .lang-btn {
+    padding: 12px 10px;
+    font-size: 6px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+  }
+}
