@@ -246,3 +246,62 @@ footer { text-align: center; padding: 2rem; font-family: 'Press Start 2P', monos
     flex-wrap: wrap;
   }
 }
+
+    .contact-links-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    .cv-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .contact-link.cv-item {
+      flex: 1;
+      min-width: 180px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .contact-link.cv-item:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 var(--gold);
+      border-color: var(--gold);
+    }
+    .flag-icon {
+      font-size: 1.2rem;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    /* Ajuste para nivel de dominio sin desplazamiento izquierdo */
+    .skill-level-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .skill-level-name {
+      min-width: 140px;
+      font-weight: 500;
+    }
+    .skill-level-badges {
+      display: flex;
+      gap: 6px;
+    }
+    .lvl-current {
+      min-width: 60px;
+      text-align: right;
+    }
+    @media (max-width: 640px) {
+      .skill-level-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .lvl-current {
+        text-align: left;
+      }
+      .cv-buttons {
+        flex-direction: column;
+      }
+    }
