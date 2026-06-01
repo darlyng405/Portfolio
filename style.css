@@ -139,7 +139,7 @@ main { position: relative; z-index: 1; padding-top: 64px; }
 .skill-tag { background: #F3EFE6; border: 1px solid #C5B28B; padding: 4px 10px; font-size: 11px; color: #4E3B28; transition: 0.1s; }
 .skill-tag:hover { background: var(--green); border-color: var(--green); color: #fff; }
 
-/* NIVEL DE DOMINIO - versión limpia sin lvl-current */
+/* NIVEL DE DOMINIO con texto a la derecha */
 .skill-level-list {
   display: flex;
   flex-direction: column;
@@ -148,8 +148,9 @@ main { position: relative; z-index: 1; padding-top: 64px; }
 .skill-level-item {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1rem;
+  flex-wrap: wrap;
   padding: 0.5rem 0;
   border-bottom: 1px solid var(--bg2);
 }
@@ -182,7 +183,13 @@ main { position: relative; z-index: 1; padding-top: 64px; }
   color: var(--muted);
   border-color: var(--bg2);
 }
-/* No existe .lvl-current */
+.lvl-current {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  color: var(--gold);
+  min-width: 70px;
+  text-align: right;
+}
 
 .project-card { background: var(--surface); border: var(--border); box-shadow: var(--shadow); margin-bottom: 1.5rem; transition: transform 0.15s; }
 .project-card:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--brown-lt); }
@@ -258,7 +265,6 @@ main { position: relative; z-index: 1; padding-top: 64px; }
 .edu-period { font-family: 'Press Start 2P', monospace; font-size: 7px; color: var(--green); }
 footer { text-align: center; padding: 2rem; font-family: 'Press Start 2P', monospace; font-size: 7px; color: var(--brown-lt); border-top: 1px dashed var(--brown-lt); margin-top: 2rem; }
 
-/* CVs con banderas */
 .cv-buttons {
   display: flex;
   gap: 1rem;
@@ -280,11 +286,11 @@ footer { text-align: center; padding: 2rem; font-family: 'Press Start 2P', monos
   vertical-align: middle;
 }
 
-/* Responsive */
 @media (max-width: 640px) {
   .about-grid, .hero-profile-row { grid-template-columns: 1fr; flex-direction: column-reverse; }
   .photo-frame { width: 90px; height: 90px; }
   .skill-level-item { flex-direction: column; align-items: flex-start; }
+  .lvl-current { text-align: left; margin-top: 4px; }
   .slot { font-size: 6px; padding: 12px 10px; }
   .slot-num { display: none; }
   .project-actions { flex-wrap: wrap; }
