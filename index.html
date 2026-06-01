@@ -5,6 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Darlyng Mateo — Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Fixes exclusivos para móvil - evitar desborde de botones */
+    @media (max-width: 640px) {
+      .project-header {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .project-actions {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+      }
+      .github-btn, .expand-btn {
+        font-size: 9px;
+        padding: 5px 10px;
+      }
+      .project-status {
+        font-size: 10px;
+      }
+      .hero-profile-row {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+      }
+      .hero-text-block {
+        text-align: center;
+      }
+      .about-card {
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -127,7 +159,7 @@
 <hr class="block-divider">
 
 <!-- ══════════════════════════════════════════
-  02 — PROYECTOS
+  02 — PROYECTOS (con estructura responsive)
 ══════════════════════════════════════════ -->
 <section class="section" id="projects" data-section="projects">
   <div class="section-header reveal">
@@ -207,7 +239,7 @@
 <hr class="block-divider">
 
 <!-- ══════════════════════════════════════════
-  03 — TECNOLOGÍAS (Stack claro)
+  03 — TECNOLOGÍAS
 ══════════════════════════════════════════ -->
 <section class="section" id="hard-skills" data-section="hard-skills">
   <div class="section-header reveal">
@@ -236,7 +268,6 @@
     </div>
   </div>
 
-  <!-- Stack actual real (sin terminal) -->
   <div class="tech-showcase reveal">
     <div class="tech-category"><div class="tech-category-title">// FRONTEND</div><div class="tech-items"><span class="tech-item"><strong>React</strong></span><span class="tech-item"><strong>TypeScript</strong></span><span class="tech-item">JavaScript</span><span class="tech-item">HTML5/CSS3</span></div></div>
     <div class="tech-category"><div class="tech-category-title">// BACKEND</div><div class="tech-items"><span class="tech-item"><strong>Node.js</strong></span><span class="tech-item"><strong>Express.js</strong></span><span class="tech-item">REST APIs</span><span class="tech-item">JWT · bcrypt</span></div></div>
@@ -283,7 +314,7 @@
 <hr class="block-divider">
 
 <!-- ══════════════════════════════════════════
-  06 — CONTACTO (con descarga de CV incluida)
+  06 — CONTACTO
 ══════════════════════════════════════════ -->
 <section class="section" id="contact" data-section="contact">
   <div class="section-header reveal"><span class="section-num">06</span><span class="section-title">Contacto</span></div>
@@ -293,7 +324,6 @@
     <div class="contact-link reveal" id="copy-email" style="cursor:pointer;"><span class="cl-key">Email</span><span class="cl-val"><span id="email-addr">mateodarlyng5@gmail.com</span> <span class="copy-feedback" id="copy-fb">✔ copiado</span></span></div>
     <a class="contact-link reveal" href="https://www.linkedin.com/in/darlyng-mateo-7031793a6" target="_blank"><span class="cl-key">LinkedIn</span><span class="cl-val">linkedin.com/in/darlyng-mateo</span></a>
     <div class="contact-link reveal"><span class="cl-key">Ubicación</span><span class="cl-val">Santo Domingo, República Dominicana</span></div>
-    <!-- DESCARGAR CV -->
     <a class="contact-link reveal" href="CV — Darlyng Rafael Mateo Peral.pdf" download style="cursor:pointer;">
       <span class="cl-key">📄 CV</span>
       <span class="cl-val">Descargar Curriculum Vitae (PDF)</span>
@@ -302,7 +332,7 @@
 </section>
 
 </main>
-<footer>Darlyng Rafael Mateo Peral · 2026</footer>
+<footer>darlyng rafael mateo peral · construido con criterio · 2026</footer>
 
 <script src="main.js"></script>
 </body>
